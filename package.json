@@ -1,0 +1,62 @@
+{
+  "name": "cc-flow",
+  "version": "14.0.4",
+  "type": "module",
+  "type-comment": "absolutely do not remove the type:module line.  any advise that says to is wrong.",
+  "description": "git versioning CLI",
+  "author": "Jason Henriksen",
+  "keywords": [],
+  "main": "./src/main/cli.ts",
+  "types": "./dist/tsc/cli.d.ts",
+  "bin": "gv.cjs",
+  "files": [
+    "dist/main.cjs",
+    "gv.cjs",
+    "README.MD"
+  ],
+  "scripts": {
+    "cli-comment": "These extra parameters are absolutely required.  wont work without them.",
+    "test-cli": "cd ../../test-cc-flow && node --experimental-specifier-resolution=node node_modules/cc-flow/dist/tsc/cli.js",
+    "cli": "node --loader ts-node/esm --experimental-specifier-resolution=node src/cli.ts",
+    "kick": "node --experimental-specifier-resolution=node dist/tsc/kickCubi.js",
+    "cli2": "node --experimental-specifier-resolution=node dist/tsc/cli.js",
+    "cli4": "node --loader ts-node/esm --experimental-specifier-resolution=node src/cli.ts",
+    "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
+    "test": "jest --runInBand",
+    "test:coverage": "jest  --runInBand --coverage",
+    "test:watch": "jest --watch --runInBand",
+    "ts-node": "ts-node",
+    "docs": "typedoc --entryPoints src/main.ts",
+    "clean": "rimraf ./dist",
+    "build": "rimraf ./dist ; webpack",
+    "build:compile": "tsc -p tsconfig.json",
+    "build:watch": "rimraf ./dist ; webpack watch"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "@types/node": "^15.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "eslint": "^7.22.0",
+    "jest": "^27.4.3",
+    "rimraf": "3.0.2",
+    "ts-jest": "^27.0.7",
+    "ts-loader": "9.2.6",
+    "ts-node": "^9.1.1",
+    "tslib": "2.3.1",
+    "typedoc": "^0.20.35",
+    "typescript": "^4.2.3",
+    "webpack": "5.65.0",
+    "webpack-cli": "4.9.1"
+  },
+  "dependencies": {
+    "aws-sdk": "2.1046.0",
+    "git-url-parse": "11.6.0",
+    "inquirer": "8.2.0",
+    "is-ci": "3.0.1",
+    "lodash": "4.17.21",
+    "ora": "^6.0.1",
+    "os-name": "5.0.1",
+    "url-join": "4.0.1"
+  }
+}

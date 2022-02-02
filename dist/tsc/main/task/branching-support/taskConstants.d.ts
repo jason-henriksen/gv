@@ -1,0 +1,27 @@
+declare const taskConstants: Readonly<{
+    'start.bugfix': string;
+    'start.feature': string;
+    'start.release': string;
+    'merge.to.develop': string;
+    'merge.from.develop': string;
+    'merge.release': string;
+    'merge.master': string;
+    fix: string;
+    'update.version': string;
+    'update.build': string;
+    'abandon.branch': string;
+    BUGFIX: string;
+    FEATURE: string;
+    START_RELEASE: string;
+    DEVELOP: string;
+    MERGE_RELEASE: string;
+    MASTER: string;
+    FIX_BRANCH: string;
+    VER: string;
+    VER_MAJOR: string;
+    VER_MINOR: string;
+    FEATURE_BUILD: string;
+    BRANCH_UPDATE: string;
+    ABANDON: string;
+}>;
+export default taskConstants;

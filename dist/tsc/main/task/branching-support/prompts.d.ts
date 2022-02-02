@@ -1,0 +1,22 @@
+export declare const makeVersionBumpChoices: (currentVersion: any) => any[];
+declare const prompts: {
+    targets: any;
+    renameType: any;
+    doYouWantToAbortMerge: any;
+    jiraName: any;
+    jiraDesc: any;
+    getReleaseTarget: any;
+    getFeatureTarget: any;
+    continueCheck: any;
+    mergeCheck: any;
+    autoCompleteRelease: any;
+    gitMakeBranch: any;
+    gitDevelopBranch: any;
+    gitPushBranch: any;
+    noChangesFound: any;
+    featureCleanup: any;
+    releaseCleanup: any;
+    bugFixCleanup: any;
+    featureMergeTarget: any;
+};
+export default prompts;

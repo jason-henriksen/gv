@@ -1,2 +1,4 @@
-# gv
-An extremely user friend git versioning tool.  Menu driven with support for GitFlow and GitHubFlow.  Keeps your banches and your semver correct.
+# gv   Git Versioning 🚀
+
+🚀 Opinionated tool to automate the branching and versioning of software
+
